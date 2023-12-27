@@ -1,0 +1,48 @@
+:root {
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-salmon: #ee9972;
+  --secondary-peach: #fbdabb;
+  --secondary-grey: #edefee;
+  --secondary-black: #333333;
+}
+
+.font-karla {
+  font-family: "Karla", sans-serif;
+}
+
+.font-markazi {
+  font-family: "Markazi Text", serif;
+}
+
+.bg-pri-green {
+  background-color: var(--primary-green);
+}
+
+.bg-pri-yellow {
+  background-color: var(--primary-yellow);
+}
+
+.text-pri-green {
+  color: var(--primary-green);
+}
+
+.text-pri-yellow {
+  color: var(--primary-yellow);
+}
+
+.text-sec-salmon {
+  color: var(--secondary-salmon);
+}
+
+.text-sec-peach {
+  color: var(--secondary-peach);
+}
+
+.text-sec-grey {
+  color: var(--secondary-grey);
+}
+
+.text-sec-black {
+  color: var(--secondary-black);
+}
