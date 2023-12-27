@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import heroImg from "../assets/restauranfood.jpg";
 import { HERO } from "../constants";
 
-function Hero() {
+const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 575 });
 
   return (
@@ -39,6 +39,6 @@ function Hero() {
       </Row>
     </Container>
   );
-}
+};
 
 export default Hero;
