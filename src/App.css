@@ -23,6 +23,10 @@
   background-color: var(--primary-yellow);
 }
 
+.bg-pri-yellow:hover {
+  background-color: var(--secondary-salmon);
+}
+
 .text-pri-green {
   color: var(--primary-green);
 }
@@ -45,4 +49,21 @@
 
 .text-sec-black {
   color: var(--secondary-black);
+}
+
+.top-20 {
+  top: 20%;
+}
+
+.vh-50 {
+  min-height: 50vh;
+  height: 25rem;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
+.fs-title {
+  font-size: 3.5rem;
 }
