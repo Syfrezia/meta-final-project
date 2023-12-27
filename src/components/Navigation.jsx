@@ -13,7 +13,7 @@ const Navigation = () => {
   const isTablet = useMediaQuery({ minWidth: 768 });
 
   return (
-    <Navbar expand="lg" className="bg-light navbar-light" sticky="top">
+    <Navbar expand="lg" className="bg-white navbar-white" sticky="top">
       <Container>
         <Row className="m-0 p-0 w-100 d-flex justify-content-between justify-content-md-center">
           <Col xs={6} md={5} lg={3}>
