@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom";
 import { NAV } from "../constants";
 
-const NavLinks = () => (
+const NavLinks = ({handleClose}) => (
   <nav className="d-flex align-items-lg-center">
     <ul className="m-0 p-0 d-flex flex-column flex-lg-row gap-4 font-karla fw-semibold nav-list">
       <li>
-        <Link to="/" className="nav-link">
+        <Link to="/" className="nav-link" onClick={handleClose}>
           {NAV.HOME}
         </Link>
       </li>
       <li>
-        <a href="#about" className="nav-link">
+        <a href="#about" className="nav-link" onClick={handleClose}>
           {NAV.ABOUT}
         </a>
       </li>
       <li>
-        <a href="#menu" className="nav-link">
+        <a href="#menu" className="nav-link" onClick={handleClose}>
           {NAV.MENU}
         </a>
       </li>
       <li>
-        <Link to="/booking" className="nav-link">
+        <Link to="/booking" className="nav-link" onClick={handleClose}>
           {NAV.RESERVATIONS}
         </Link>
       </li>
       <li>
-        <a href="#order" className="nav-link">
+        <a href="#order" className="nav-link" onClick={handleClose}>
           {NAV.ORDER}
         </a>
       </li>
       <li>
-        <a href="#login" className="nav-link">
+        <a href="#login" className="nav-link" onClick={handleClose}>
           {NAV.LOGIN}
         </a>
       </li>

@@ -43,7 +43,7 @@ const Navigation = () => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body className="d-flex justify-content-center font-karla text-center text-sec-black">
-                <NavLinks />
+                <NavLinks handleClose={handleClose} />
               </Offcanvas.Body>
             </Offcanvas>
           </Col>
