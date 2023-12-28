@@ -89,7 +89,7 @@ export const ABOUT = {
 export const FOOTER_NAV = [
   {
     label: "Home",
-    link: "#",
+    link: "/",
   },
   {
     label: "About",
@@ -101,7 +101,7 @@ export const FOOTER_NAV = [
   },
   {
     label: "Reservations",
-    link: "#",
+    link: "/booking",
   },
   {
     label: "Order",

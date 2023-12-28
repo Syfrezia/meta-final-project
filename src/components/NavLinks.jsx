@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { NAV } from "../constants";
 
 const NavLinks = () => (
-  <nav className="d-flex align-items-center">
-    <ul className="m-0 p-0 d-flex gap-4 font-karla fw-semibold nav-list">
+  <nav className="d-flex align-items-lg-center">
+    <ul className="m-0 p-0 d-flex flex-column flex-lg-row gap-4 font-karla fw-semibold nav-list">
       <li>
         <Link to="/" className="nav-link">
           {NAV.HOME}

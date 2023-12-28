@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import restaurant from "../assets/restaurant.jpg";
 import { FOOTER_NAV, FOOTER_CONTACT, FOOTER_SOCIAL } from "../constants";
 
@@ -16,47 +17,47 @@ const Footer = () => {
             style={{ objectFit: "cover", objectPosition: "40% 100%" }}
           />
         </Col>
-        <Col lg={2}>
+        <Col md={3} lg={2}>
           <h5 className="text-pri-green">Doormat Navigation</h5>
-          <ul className="d-flex flex-column font-karla list-group">
+          <ul className="d-flex flex-column font-karla nav-list">
             {FOOTER_NAV.map((item, index) => (
-              <li className="list-group" key={index}>
-                <a
-                  href={item.link}
+              <li className="nav-link" key={index}>
+                <Link
+                  to={item.link}
                   className="text-decoration-none text-sec-black"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </Col>
-        <Col lg={2}>
+        <Col md={3} lg={2}>
           <h5 className="text-pri-green">Contacts</h5>
-          <ul className="d-flex flex-column font-karla list-group">
+          <ul className="d-flex flex-column font-karla nav-list">
             {FOOTER_CONTACT.map((item, index) => (
-              <li className="list-group" key={index}>
-                <a
+              <li className="nav-link" key={index}>
+                <Link
                   href={item.link}
                   className="text-decoration-none text-sec-black"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </Col>
-        <Col lg={2}>
+        <Col md={3} lg={2}>
           <h5 className="text-pri-green">Social Media Links</h5>
-          <ul className="pt-2 d-flex flex-row gap-3 gap-lg-5 font-karla list-group">
+          <ul className="pt-2 d-flex flex-row gap-3 gap-lg-5 font-karla nav-list">
             {FOOTER_SOCIAL.map((item, index) => (
-              <li className="list-group" key={index}>
-                <a
+              <li className="nav-link" key={index}>
+                <Link
                   href={item.link}
                   className="text-decoration-none text-sec-black" style={{scale: "1.25"}}
                 >
                   {item.icon}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
