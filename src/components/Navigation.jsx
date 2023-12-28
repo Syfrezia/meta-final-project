@@ -14,7 +14,7 @@ const Navigation = () => {
 
   return (
     <Navbar expand="lg" className="bg-white navbar-white" sticky="top">
-      <Container>
+      <Container fluid className="m-0 p-0">
         <Row className="m-0 p-0 w-100 d-flex justify-content-between justify-content-md-center">
           <Col xs={6} md={5} lg={3}>
             <Navbar.Brand className="d-flex justify-content-center justify-content-md-start p-0">

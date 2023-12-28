@@ -13,25 +13,25 @@ const Hero = () => {
           isTablet ? "h-100" : "h-75"
         } m-0 p-0 d-flex justify-content-center position-relative`}
       >
-        <Col md={4} lg={3} className="px-4 px-md-0 d-flex align-items-center">
+        <Col md={5} lg={4} className="px-4 px-md-0 d-flex align-items-center">
           <div className="w-100">
-            <h1 className="font-markazi fs-title text-pri-yellow">
+            <h1 className="font-markazi fs-title fs-md-title fs-md-1 text-pri-yellow">
               {HERO.TITLE}
             </h1>
-            <h2 className="font-markazi text-white">{HERO.SUBTITLE}</h2>
-            <p className="font-karla text-white">{HERO.DESCRIPTION}</p>
+            <h2 className="font-markazi text-white fs-1">{HERO.SUBTITLE}</h2>
+            <p className="font-karla text-white fs-5">{HERO.DESCRIPTION}</p>
             <Button className="mt-3 px-4 py-2 font-karla rounded-4 bg-pri-yellow border border-2 border-white text-black fw-bolder">
               {HERO.BUTTON}
             </Button>
           </div>
         </Col>
-        <Col md={6} lg={4} className="d-none d-md-flex justify-content-end">
+        <Col md={5} lg={4} className="d-none d-md-flex justify-content-end">
           <div className="position-absolute top-20">
             <img
               src={heroImg}
               alt="restaurant food"
-              width={320}
-              height={360}
+              width={isTablet ? 320 : 360}
+              height={isTablet ? 360 : 400}
               className="rounded-4"
             />
           </div>
