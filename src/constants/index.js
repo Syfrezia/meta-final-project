@@ -7,6 +7,7 @@ import female2 from "../assets/female-2.jpg";
 import female3 from "../assets/female-3.jpg";
 import marioAdrianA from "../assets/MarioAdrianA.jpg";
 import marioAdrianB from "../assets/MarioAdrianB.jpg";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export const NAV = {
   HOME: "Home",
@@ -84,3 +85,60 @@ export const ABOUT = {
     "Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.",
   PICTURES: [marioAdrianA, marioAdrianB],
 };
+
+export const FOOTER_NAV = [
+  {
+    label: "Home",
+    link: "#",
+  },
+  {
+    label: "About",
+    link: "#",
+  },
+  {
+    label: "Menu",
+    link: "#",
+  },
+  {
+    label: "Reservations",
+    link: "#",
+  },
+  {
+    label: "Order",
+    link: "#",
+  },
+  {
+    label: "Login",
+    link: "#",
+  },
+];
+
+export const FOOTER_CONTACT = [
+  {
+    label: "Address",
+    link: "#",
+  },
+  {
+    label: "Phone Number",
+    link: "#",
+  },
+  {
+    label: "Email",
+    link: "#",
+  },
+];
+
+export const FOOTER_SOCIAL = [
+  {
+    icon: <FaFacebookF />,
+    link: "https://www.facebook.com/",
+  },
+  {
+    icon: <FaTwitter />,
+    link: "https://twitter.com/",
+  },
+  {
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/",
+  },
+];
