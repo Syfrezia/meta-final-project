@@ -1,7 +1,4 @@
-import Hero from "../containers/Hero";
-import Highlights from "../containers/Highlights";
-import Testimonials from "../containers/Testimonials";
-import About from "../containers/About";
+import { Hero, Highlights, Testimonials, About } from "../containers";
 
 const HomePage = () => (
   <>
