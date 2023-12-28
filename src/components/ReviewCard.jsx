@@ -1,24 +1,10 @@
 import { Card } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
+import renderStars from "../helpers/renderStars";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 
 const ReviewCard = ({ testimonial }) => {
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const halfStar = rating - fullStars === 0.5;
-
-    const stars = [];
-    for (let i = 0; i < fullStars; i++) {
-      stars.push(<FaStar key={i} />);
-    }
-    if (halfStar) {
-      stars.push(<FaStarHalf key={fullStars} />);
-    }
-
-    return stars;
-  };
-
-  const userRating = renderStars(testimonial.rating);
+  const userRating = renderStars(testimonial.rating, FaStar, FaStarHalf);
 
   const isTablet = useMediaQuery({ maxWidth: 991 });
 
@@ -36,7 +22,7 @@ const ReviewCard = ({ testimonial }) => {
         />
         <p className="d-flex flex-wrap fw-semibold">{testimonial.name}</p>
       </div>
-      <div className="mt-3 d-flex justify-content-center text-warning fs-4">
+      <div className="mt-3 d-flex justify-content-center text-pri-yellow fs-4">
         {userRating}
       </div>
       <div className="mt-2 text-sec-black">{testimonial.review}</div>
