@@ -1,9 +1,9 @@
 import Main from "../containers/Main";
 
-const Home = () => (
+const HomePage = () => (
   <>
     <Main />
   </>
 );
 
-export default Home;
+export default HomePage;
