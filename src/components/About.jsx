@@ -7,7 +7,7 @@ const About = () => {
   const isTablet = useMediaQuery({ maxWidth: 991 });
 
   return (
-    <Container fluid className="m-0 py-5 bg-pri-green">
+    <Container fluid className="m-0 py-5 bg-pri-green" id="about">
       <Row className="w-100 m-0 p-0 d-flex justify-content-center">
         <Col
           md={10}

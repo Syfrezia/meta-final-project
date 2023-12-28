@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Navbar, Offcanvas } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import logo from "../assets/Logo.svg";
@@ -17,7 +18,11 @@ const Navigation = () => {
       <Container fluid className="m-0 p-0">
         <Row className="m-0 p-0 w-100 d-flex justify-content-between justify-content-md-center">
           <Col xs={6} md={5} lg={3}>
-            <Navbar.Brand className="d-flex justify-content-center justify-content-md-start p-0">
+            <Navbar.Brand
+              as={Link}
+              to="/"
+              className="d-flex justify-content-center justify-content-md-start p-0"
+            >
               <img className="logo" src={logo} alt="Little Lemon Logo" />
             </Navbar.Brand>
           </Col>

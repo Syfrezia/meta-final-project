@@ -1,27 +1,41 @@
-import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { NAV } from "../constants";
 
 const NavLinks = () => (
-  <Nav className="font-karla fw-bold list-group">
-    <Nav.Link href="#home" className="list-group">
-      {NAV.HOME}
-    </Nav.Link>
-    <Nav.Link href="#about" className="list-group">
-      {NAV.ABOUT}
-    </Nav.Link>
-    <Nav.Link href="#menu" className="list-group">
-      {NAV.MENU}
-    </Nav.Link>
-    <Nav.Link href="#reservations" className="list-group">
-      {NAV.RESERVATIONS}
-    </Nav.Link>
-    <Nav.Link href="#order" className="list-group">
-      {NAV.ORDER}
-    </Nav.Link>
-    <Nav.Link href="#login" className="list-group">
-      {NAV.LOGIN}
-    </Nav.Link>
-  </Nav>
+  <nav className="d-flex align-items-center">
+    <ul className="m-0 p-0 d-flex gap-4 font-karla fw-semibold nav-list">
+      <li>
+        <Link to="/" className="nav-link">
+          {NAV.HOME}
+        </Link>
+      </li>
+      <li>
+        <a href="#about" className="nav-link">
+          {NAV.ABOUT}
+        </a>
+      </li>
+      <li>
+        <a href="#menu" className="nav-link">
+          {NAV.MENU}
+        </a>
+      </li>
+      <li>
+        <Link to="/booking" className="nav-link">
+          {NAV.RESERVATIONS}
+        </Link>
+      </li>
+      <li>
+        <a href="#order" className="nav-link">
+          {NAV.ORDER}
+        </a>
+      </li>
+      <li>
+        <a href="#login" className="nav-link">
+          {NAV.LOGIN}
+        </a>
+      </li>
+    </ul>
+  </nav>
 );
 
 export default NavLinks;
