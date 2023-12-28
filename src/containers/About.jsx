@@ -18,7 +18,7 @@ const About = () => {
             {ABOUT.TITLE}
           </h2>
           <h3 className="font-markazi text-white fs-2">{ABOUT.SUBTITLE}</h3>
-          <p className="font-karla text-white fs-5 lh-sm">
+          <p className="font-karla text-white fs-6 lh-md">
             {ABOUT.DESCRIPTION}
           </p>
         </Col>
@@ -36,7 +36,7 @@ const About = () => {
                 ? "d-flex flex-column flex-md-row gap-4"
                 : "position-relative"
             }
-            style={isTablet ? {} : { height: "35rem" }}
+            style={isTablet ? {} : { height: "30rem" }}
           >
             {ABOUT.PICTURES.map((picture, index) => (
               <AboutImage
