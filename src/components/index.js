@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import NavLinks from "./NavLinks";
 import ReviewCard from "./ReviewCard";
 import PrimaryButton from "./common/PrimaryButton";
+import BookingForm from "./BookingForm";
 
 export {
   AboutImage,
@@ -12,4 +13,5 @@ export {
   NavLinks,
   ReviewCard,
   PrimaryButton,
+  BookingForm,
 };

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Reservation } from "../containers";
 
 const BookingPage = () => {
   return (
-    <div>BookingPage</div>
-  )
-}
+    <>
+      <Reservation />
+    </>
+  );
+};
 
-export default BookingPage
+export default BookingPage;
