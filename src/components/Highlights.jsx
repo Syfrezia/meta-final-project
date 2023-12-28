@@ -13,7 +13,7 @@ const Highlights = () => {
           <h2 className="font-markazi fs-highlight">This weeks' specials!</h2>
         </Col>
         <Col
-          lg={3}
+          lg={4}
           className="m-0 p-0 d-flex justify-content-center justify-content-lg-end align-items-center"
         >
           <Button className="px-4 py-2 font-karla rounded-4 bg-pri-yellow border border-2 border-white text-black fw-bolder">
