@@ -1,12 +1,14 @@
-import salad from "../assets/greek salad.jpg";
-import bruschetta from "../assets/bruschetta.svg";
-import lemon from "../assets/lemon dessert.jpg";
-import male1 from "../assets/male-1.jpg";
-import female1 from "../assets/female-1.jpg";
-import female2 from "../assets/female-2.jpg";
-import female3 from "../assets/female-3.jpg";
-import marioAdrianA from "../assets/MarioAdrianA.jpg";
-import marioAdrianB from "../assets/MarioAdrianB.jpg";
+import {
+  salad,
+  bruschetta,
+  lemon,
+  male1,
+  female1,
+  female2,
+  female3,
+  marioAdrianA,
+  marioAdrianB,
+} from "../assets";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export const NAV = {

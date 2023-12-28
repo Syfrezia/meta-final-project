@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import restaurant from "../assets/restaurant.jpg";
+import { restaurant } from "../assets";
 import { FOOTER_NAV, FOOTER_CONTACT, FOOTER_SOCIAL } from "../constants";
 
 const Footer = () => {
@@ -54,7 +54,8 @@ const Footer = () => {
               <li className="nav-link" key={index}>
                 <Link
                   href={item.link}
-                  className="text-decoration-none text-sec-black" style={{scale: "1.25"}}
+                  className="text-decoration-none text-sec-black"
+                  style={{ scale: "1.25" }}
                 >
                   {item.icon}
                 </Link>

@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
-import heroImg from "../assets/restauranfood.jpg";
+import { restaurantFood } from "../assets";
 import PrimaryButton from "../components/common/PrimaryButton";
 import { HERO } from "../constants";
 
@@ -36,7 +36,7 @@ const Hero = () => {
         >
           <div className="position-absolute top-20">
             <img
-              src={heroImg}
+              src={restaurantFood}
               alt="restaurant food"
               width={isTablet ? 320 : 360}
               height={isTablet ? 360 : 400}
