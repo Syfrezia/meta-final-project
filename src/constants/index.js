@@ -26,6 +26,11 @@ export const HERO = {
   BUTTON: "Reserve a table",
 };
 
+export const HIGHLIGHTS_TITLE = {
+  NAME: "This weeks' specials!",
+  BUTTON: "Online Menu",
+};
+
 export const HIGHLIGHTS = [
   {
     image: salad,

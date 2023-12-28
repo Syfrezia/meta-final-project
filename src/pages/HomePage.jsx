@@ -1,8 +1,14 @@
-import Main from "../containers/Main";
+import Hero from "../containers/Hero";
+import Highlights from "../containers/Highlights";
+import Testimonials from "../containers/Testimonials";
+import About from "../containers/About";
 
 const HomePage = () => (
   <>
-    <Main />
+    <Hero />
+    <Highlights />
+    <Testimonials />
+    <About />
   </>
 );
 

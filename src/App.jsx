@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import Header from "./containers/Header";
+import Header from "./layouts/Header";
 import HomePage from "./pages/HomePage";
 import BookingPage from "./pages/BookingPage";
-import Footer from "./containers/Footer";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (

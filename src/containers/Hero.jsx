@@ -1,7 +1,7 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import heroImg from "../assets/restauranfood.jpg";
+import PrimaryButton from "../components/common/PrimaryButton";
 import { HERO } from "../constants";
 
 const Hero = () => {
@@ -21,13 +21,12 @@ const Hero = () => {
             </h1>
             <h2 className="font-markazi text-white fs-1">{HERO.SUBTITLE}</h2>
             <p className="font-karla text-white fs-5">{HERO.DESCRIPTION}</p>
-            <Button
-              as={Link}
+            <PrimaryButton
               to="/booking"
               className="mt-3 px-4 py-2 font-karla rounded-4 bg-pri-yellow border border-2 border-white text-black fw-bolder"
             >
               {HERO.BUTTON}
-            </Button>
+            </PrimaryButton>
           </div>
         </Col>
         <Col
