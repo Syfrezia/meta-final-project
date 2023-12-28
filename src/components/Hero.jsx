@@ -4,13 +4,13 @@ import heroImg from "../assets/restauranfood.jpg";
 import { HERO } from "../constants";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 575 });
+  const isTablet = useMediaQuery({ maxWidth: 991 });
 
   return (
-    <Container fluid className={`${isMobile ? "vh-50" : "vh-75"} m-0 p-0`}>
+    <Container fluid className={`${isTablet ? "vh-50" : "vh-75"} m-0 p-0`}>
       <Row
         className={`bg-pri-green ${
-          isMobile ? "h-100" : "h-75"
+          isTablet ? "h-100" : "h-75"
         } m-0 p-0 d-flex justify-content-center position-relative`}
       >
         <Col md={4} lg={3} className="px-4 px-md-0 d-flex align-items-center">
@@ -20,7 +20,7 @@ const Hero = () => {
             </h1>
             <h2 className="font-markazi text-white">{HERO.SUBTITLE}</h2>
             <p className="font-karla text-white">{HERO.DESCRIPTION}</p>
-            <Button className="mt-3 px-4 py-2 font-karla rounded-4 bg-pri-yellow text-black fw-bolder">
+            <Button className="mt-3 px-4 py-2 font-karla rounded-4 bg-pri-yellow border border-2 border-white text-black fw-bolder">
               {HERO.BUTTON}
             </Button>
           </div>
