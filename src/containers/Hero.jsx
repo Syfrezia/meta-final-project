@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import { restaurantFood } from "../assets";
-import PrimaryButton from "../components/common/PrimaryButton";
+import { PrimaryButton } from "../components";
 import { HERO } from "../constants";
 
 const Hero = () => {

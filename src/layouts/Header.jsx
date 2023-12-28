@@ -1,4 +1,4 @@
-import Navigation from "../components/Navigation";
+import { Navigation } from "../components";
 
 const Header = () => (
   <header className="position-sticky top-0" style={{ zIndex: "1000" }}>

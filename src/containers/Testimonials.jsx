@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import ReviewCard from "../components/ReviewCard";
+import { ReviewCard } from "../components";
 import { TESTIMONIALS } from "../constants";
 
 const Testimonials = () => {

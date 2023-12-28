@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import { ABOUT } from "../constants";
-import AboutImage from "../components/AboutImage";
+import { AboutImage } from "../components";
 
 const About = () => {
   const isTablet = useMediaQuery({ maxWidth: 991 });

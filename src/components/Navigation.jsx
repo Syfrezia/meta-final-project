@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Navbar, Offcanvas } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
-import {logo} from "../assets";
-import NavLinks from "./NavLinks";
+import { logo } from "../assets";
+import { NavLinks } from "./";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);

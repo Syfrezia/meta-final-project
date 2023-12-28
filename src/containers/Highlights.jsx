@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import HighlightCard from "../components/HighlightCard";
-import PrimaryButton from "../components/common/PrimaryButton";
+import { HighlightCard } from "../components";
+import { PrimaryButton } from "../components";
 import { HIGHLIGHTS, HIGHLIGHTS_TITLE } from "../constants";
 
 const Highlights = () => {
