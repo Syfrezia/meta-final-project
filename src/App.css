@@ -27,6 +27,10 @@
   background-color: var(--secondary-salmon);
 }
 
+.bg-sec-grey {
+  background-color: var(--secondary-grey);
+}
+
 .text-pri-green {
   color: var(--primary-green);
 }
@@ -65,9 +69,15 @@
 }
 
 .fs-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .fs-md-title {
+    font-size: 4rem;
+  }
 }
 
 .fs-highlight {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
