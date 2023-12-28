@@ -1,17 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 import Header from "./containers/Header";
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
+import BookingPage from "./pages/BookingPage";
 import Footer from "./containers/Footer";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
