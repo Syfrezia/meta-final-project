@@ -30,7 +30,11 @@ const Hero = () => {
             </Button>
           </div>
         </Col>
-        <Col md={5} lg={4} className="d-none d-md-flex justify-content-end">
+        <Col
+          md={5}
+          lg={4}
+          className="d-none d-md-flex align-items-md-center justify-content-end"
+        >
           <div className="position-absolute top-20">
             <img
               src={heroImg}

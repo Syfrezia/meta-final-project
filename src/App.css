@@ -55,8 +55,10 @@
   color: var(--secondary-black);
 }
 
-.top-20 {
-  top: 20%;
+@media screen and (min-width: 992px) {
+  .top-20 {
+    top: 20%;
+  }
 }
 
 .vh-50 {
@@ -94,6 +96,7 @@
 
 .nav-list {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .nav-link {
