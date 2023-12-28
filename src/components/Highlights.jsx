@@ -4,7 +4,7 @@ import { HIGHLIGHTS } from "../constants";
 
 const Highlights = () => {
   return (
-    <Container fluid className="my-5 my-lg-0 p-0">
+    <Container fluid className="my-5 mt-lg-0 mb-lg-5 p-0">
       <Row className="w-100 m-0 p-0 d-flex justify-content-center align-items-center">
         <Col
           lg={4}
