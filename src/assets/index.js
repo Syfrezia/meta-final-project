@@ -2,7 +2,7 @@ import logo from "./images/Logo.svg";
 import bruschetta from "./images/bruschetta.svg";
 import salad from "./images/greek salad.jpg";
 import lemon from "./images/lemon dessert.jpg";
-import restaurantFood from "./images/restauranfood.jpg";
+import restaurantFood from "./images/restaurant food.jpg";
 import restaurant from "./images/restaurant.jpg";
 import marioAdrianA from "./images/MarioAdrianA.jpg";
 import marioAdrianB from "./images/MarioAdrianB.jpg";
