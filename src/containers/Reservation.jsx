@@ -69,7 +69,7 @@ const Reservation = () => {
     <>
       <Container fluid className="m-0 py-5">
         <Row className="w-100 m-0 p-0">
-          <Col md={6} lg={{ span: 4, offset: 2 }}>
+          <Col md={{ span: 10, offset: 1 }} lg={{ span: 4, offset: 2 }}>
             <h1>Reservation</h1>
             <BookingForm
               bookings={bookings}
