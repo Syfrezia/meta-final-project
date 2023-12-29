@@ -5,6 +5,7 @@ import NavLinks from "./NavLinks";
 import ReviewCard from "./ReviewCard";
 import PrimaryButton from "./common/PrimaryButton";
 import BookingForm from "./BookingForm";
+import ConfirmedBooking from "./ConfirmedBooking";
 
 export {
   AboutImage,
@@ -14,4 +15,5 @@ export {
   ReviewCard,
   PrimaryButton,
   BookingForm,
+  ConfirmedBooking,
 };
