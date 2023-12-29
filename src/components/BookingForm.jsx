@@ -49,7 +49,7 @@ const BookingForm = ({ availableTimes, onDateChange, submitForm }) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} aria-label="Booking Form">
       <Form.Group className="mt-3" controlId="formDate">
         <Form.Label>Choose date</Form.Label>
         <Form.Control
@@ -112,7 +112,9 @@ const BookingForm = ({ availableTimes, onDateChange, submitForm }) => {
         </Form.Select>
       </Form.Group>
 
-      <PrimaryButton type="submit" className="mt-4">Make Your Reservation</PrimaryButton>
+      <PrimaryButton type="submit" className="mt-4">
+        Make Your Reservation
+      </PrimaryButton>
     </Form>
   );
 };
