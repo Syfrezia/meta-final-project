@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import { restaurantFood } from "../assets";
@@ -21,10 +22,7 @@ const Hero = () => {
             </h1>
             <h2 className="font-markazi text-white fs-1">{HERO.SUBTITLE}</h2>
             <p className="font-karla text-white fs-5">{HERO.DESCRIPTION}</p>
-            <PrimaryButton
-              to="/booking"
-              className="mt-3 px-4 py-2 font-karla rounded-4 bg-pri-yellow border border-2 border-white text-black fw-bolder"
-            >
+            <PrimaryButton as={Link} to="/booking">
               {HERO.BUTTON}
             </PrimaryButton>
           </div>
