@@ -2,12 +2,11 @@ import { useState } from "react";
 import { Form } from "react-bootstrap";
 import { PrimaryButton } from "../components";
 
-const BookingForm = () => {
+const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
-  const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
   const handleGuestChange = (e) => {
     const guestCount = e.target.valueAsNumber;
@@ -27,6 +26,7 @@ const BookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    onSubmit({ date, time, guests, occasion });
   };
 
   return (
@@ -39,6 +39,7 @@ const BookingForm = () => {
           name="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
+          aria-label="Reservation date"
         />
       </Form.Group>
 
@@ -48,12 +49,14 @@ const BookingForm = () => {
           name="time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
+          aria-label="Reservation time"
         >
-          {availableTimes.map((time, index) => (
-            <option key={index} value={time}>
-              {time}
-            </option>
-          ))}
+          {availableTimes &&
+            availableTimes.map((time, index) => (
+              <option key={index} value={time}>
+                {time}
+              </option>
+            ))}
         </Form.Select>
       </Form.Group>
 
@@ -68,6 +71,7 @@ const BookingForm = () => {
           value={guests}
           onChange={handleGuestChange}
           onBlur={handleEmptyGuests}
+          aria-label="Number of guests"
         />
       </Form.Group>
 
@@ -77,6 +81,7 @@ const BookingForm = () => {
           name="occasion"
           value={occasion}
           onChange={(e) => setOccasion(e.target.value)}
+          aria-label="Occasion"
         >
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
