@@ -2,11 +2,30 @@ import { useState } from "react";
 import { Form } from "react-bootstrap";
 import { PrimaryButton } from "../components";
 
-const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
+const BookingForm = ({ availableTimes, onDateChange, submitForm }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
+
+  const handleDateChange = (e) => {
+    const newDate = e.target.value;
+    const date = new Date();
+    const todayDate = date.toISOString().split("T")[0];
+    if (date === "") {
+      setDate(todayDate);
+    }
+    if (newDate < todayDate) {
+      return;
+    }
+    setDate(newDate);
+    onDateChange(e);
+  };
+
+  const handleTimeChange = (e) => {
+    const newTime = e.target.value;
+    setTime(newTime);
+  };
 
   const handleGuestChange = (e) => {
     const guestCount = e.target.valueAsNumber;
@@ -24,33 +43,36 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onSubmit({ date, time, guests, occasion });
+    submitForm({ date, time, guests, occasion });
   };
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formDate">
+      <Form.Group className="mt-3" controlId="formDate">
         <Form.Label>Choose date</Form.Label>
         <Form.Control
           type="date"
           placeholder="Enter reservation date"
           name="date"
           value={date}
-          onChange={(e) => setDate(e.target.value)}
+          required
+          onChange={handleDateChange}
           aria-label="Reservation date"
         />
       </Form.Group>
 
-      <Form.Group controlId="formTime">
+      <Form.Group className="mt-3" controlId="formTime">
         <Form.Label>Choose time</Form.Label>
         <Form.Select
           name="time"
           value={time}
-          onChange={(e) => setTime(e.target.value)}
+          required
+          onChange={handleTimeChange}
           aria-label="Reservation time"
         >
+          <option value="">-- Select a time --</option>
           {availableTimes &&
             availableTimes.map((time, index) => (
               <option key={index} value={time}>
@@ -60,7 +82,7 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
         </Form.Select>
       </Form.Group>
 
-      <Form.Group controlId="formGuests">
+      <Form.Group className="mt-3" controlId="formGuests">
         <Form.Label>Number of guests</Form.Label>
         <Form.Control
           type="number"
@@ -75,20 +97,22 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
         />
       </Form.Group>
 
-      <Form.Group controlId="Occasion">
+      <Form.Group className="mt-3" controlId="Occasion">
         <Form.Label>Occasion</Form.Label>
         <Form.Select
           name="occasion"
           value={occasion}
+          required
           onChange={(e) => setOccasion(e.target.value)}
           aria-label="Occasion"
         >
+          <option value="">-- Select an occasion --</option>
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </Form.Select>
       </Form.Group>
 
-      <PrimaryButton type="submit">Make Your Reservation</PrimaryButton>
+      <PrimaryButton type="submit" className="mt-4">Make Your Reservation</PrimaryButton>
     </Form>
   );
 };
