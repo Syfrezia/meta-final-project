@@ -1,4 +1,8 @@
-const dbUrl = "http://localhost:4000/reservations";
+// comment out this line below to use local db
+const dbUrl = "https://api-little-lemon.vercel.app/reservations";
+
+// uncomment this line below to use local db
+// const dbUrl = "http://localhost:4000/reservations";
 
 // Read all bookings
 export const fetchBookings = async () => {
