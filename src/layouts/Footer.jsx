@@ -64,6 +64,11 @@ const Footer = () => {
           </ul>
         </Col>
       </Row>
+      <Row className="w-100 mt-3 mx-0 p-0 d-flex justify-content-center text-center">
+        <Col>
+          <p>copyright &copy; 2023 by Syafrie Mufariza</p>
+        </Col>
+      </Row>
     </Container>
   );
 };
