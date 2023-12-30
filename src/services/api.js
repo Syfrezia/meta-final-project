@@ -1,4 +1,4 @@
-const dbUrl = "http://localhost:3000/reservations"; // replace with your json-server URL
+const dbUrl = "http://localhost:4000/reservations"; // replace with your json-server URL
 
 // Read all bookings
 export const fetchBookings = async () => {
