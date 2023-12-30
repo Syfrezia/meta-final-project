@@ -1,4 +1,4 @@
-const dbUrl = "https://littlelemon-chicago.vercel.app/api/reservations";
+const dbUrl = "http://localhost:4000/reservations";
 
 // Read all bookings
 export const fetchBookings = async () => {
