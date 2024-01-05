@@ -14,7 +14,7 @@ const Testimonials = () => {
       </Row>
       <Row className="w-100 m-0 p-0 d-flex justify-content-center">
         {TESTIMONIALS.map((testimonial) => (
-          <Col xs={10} md={5} lg={2} className="mt-4">
+          <Col xs={10} md={5} xl={2} xxl={2} className="mt-4">
             <ReviewCard testimonial={testimonial} key={testimonial.name} />
           </Col>
         ))}
